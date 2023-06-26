@@ -36,5 +36,4 @@ COPY /src /opt/program/src/
 
 RUN chmod +x /opt/program/src/serve_app.py
 
-EXPOSE 8080
-CMD ["python", "/opt/program/src/serve_app.py"]
+ENTRYPOINT ["python", "/opt/program/src/serve_app.py"]
